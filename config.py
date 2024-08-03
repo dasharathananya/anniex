@@ -7,23 +7,23 @@ from pyrogram import filters
 load_dotenv()
 
 # Telegram API credentials - Get these from the Telegram API website
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = int(getenv("29844041"))
+API_HASH = getenv("afe565347828546c67d9a3fdb94a4fae")
+BOT_TOKEN = getenv("7448446414:AAERt1dhE1YngpQIvZ0Pxh0NLfhKldNTA-Y")
 
 # Specify where to get the following credentials
-OWNER_USERNAME = getenv("OWNER_USERNAME", "MrBrokn")
-BOT_USERNAME = getenv("BOT_USERNAME", "MISS_YUMIPRO_BOT")
-BOT_NAME = getenv("BOT_NAME", "‣ Mɪss Yᴜᴍɪ Pʀᴏ⋆ ᴠ𝟸.𝟶")
-ASSUSERNAME = getenv("ASSUSERNAME", "BROKNXASSISTANT")
+OWNER_USERNAME = getenv("@KALI_LINUX_NET", "MrBrokn")
+BOT_USERNAME = getenv("@Ananya_musicbot", "MISS_YUMIPRO_BOT")
+BOT_NAME = getenv("BOT_NAME", "‣ 𝘼𝙉𝙉𝘼𝙔𝘼 𝙈𝙐𝙎𝙄𝘾 𝘽𝙊𝙏 ")
+ASSUSERNAME = getenv("@ANANYA_MUSIC_ASSISTANT", "🎧 𝘼𝙉𝘼𝙉𝙔𝘼 ✘ 𝙈𝙐𝙎𝙄𝘾 ➛")
 EVALOP = list(map(int, getenv("EVALOP", "1841914911").split()))
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOGGER_ID = int(getenv("LOGGER_ID", -1002094142057))
+LOGGER_ID = int(getenv("-1002245560052", -1002094142057))
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # External APIs - Get these from their respective providers
-GPT_API = getenv("GPT_API")
+GPT_API = getenv("https://api.openai.com/v1/organization/projects/{project_id}/api_keys")
 DEEP_API = getenv("DEEP_API")
-OWNER_ID = int(getenv("OWNER_ID", 1841914911))
+OWNER_ID = int(getenv("7068157354", 7068157354))
 
 # Heroku deployment settings - Refer to Heroku documentation on how to obtain these
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
@@ -33,8 +33,8 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Support and contact information - Provide your own support channels
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BROKENXNETWORK")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+7yFRvkorUdFiZTll")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Ananya_x_music")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", ""https://t.me/WEST_BENGAL_HACKR)
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -54,11 +54,11 @@ TG_AUDIO_FILESIZE_LIMIT = int(getenv("TG_AUDIO_FILESIZE_LIMIT", "5242880000"))
 TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 
 # Pyrogram session strings - You need to generate these yourself
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
+STRING1 = getenv("BQHHYkkAuz2l7z7APDam5Q02nLKDHxA6xH_ieN9ReqV3S2tu_Ak2tuviD1I88eec4w1eE2GFHOrdDS9wNfakWXJtuEEA1hqJsulZ9KsDPZRKuuV2wnvnJUKYYM_RKcN0iu52Z36boXn4_pOt8p6ejM9vKtFrEX1Knz8Sh46O4IVurcIdj4wJUS6avmRYYHjNOFl0O4dOlGiVmvsKq_vkvhFrcpXqiFgt9-OYk1mtz5YCuaTpl0wFmcmW11qUxfhOit9RqBSW2c3FkrjI9NWRivuc9HutcF2_wSFRapSViOlJz9262I7vQchKG9VURgdfXVfmQY1tE4R5iF4aT-ruY6cQf0-j6QAAAAGFpL8IAA", None)
+STRING2 = getenv("BQHHYkkAuz2l7z7APDam5Q02nLKDHxA6xH_ieN9ReqV3S2tu_Ak2tuviD1I88eec4w1eE2GFHOrdDS9wNfakWXJtuEEA1hqJsulZ9KsDPZRKuuV2wnvnJUKYYM_RKcN0iu52Z36boXn4_pOt8p6ejM9vKtFrEX1Knz8Sh46O4IVurcIdj4wJUS6avmRYYHjNOFl0O4dOlGiVmvsKq_vkvhFrcpXqiFgt9-OYk1mtz5YCuaTpl0wFmcmW11qUxfhOit9RqBSW2c3FkrjI9NWRivuc9HutcF2_wSFRapSViOlJz9262I7vQchKG9VURgdfXVfmQY1tE4R5iF4aT-ruY6cQf0-j6QAAAAGFpL8IAA", None)
+STRING3 = getenv("BQHHYkkAuz2l7z7APDam5Q02nLKDHxA6xH_ieN9ReqV3S2tu_Ak2tuviD1I88eec4w1eE2GFHOrdDS9wNfakWXJtuEEA1hqJsulZ9KsDPZRKuuV2wnvnJUKYYM_RKcN0iu52Z36boXn4_pOt8p6ejM9vKtFrEX1Knz8Sh46O4IVurcIdj4wJUS6avmRYYHjNOFl0O4dOlGiVmvsKq_vkvhFrcpXqiFgt9-OYk1mtz5YCuaTpl0wFmcmW11qUxfhOit9RqBSW2c3FkrjI9NWRivuc9HutcF2_wSFRapSViOlJz9262I7vQchKG9VURgdfXVfmQY1tE4R5iF4aT-ruY6cQf0-j6QAAAAGFpL8IAA", None)
+STRING4 = getenv("BQHHYkkAuz2l7z7APDam5Q02nLKDHxA6xH_ieN9ReqV3S2tu_Ak2tuviD1I88eec4w1eE2GFHOrdDS9wNfakWXJtuEEA1hqJsulZ9KsDPZRKuuV2wnvnJUKYYM_RKcN0iu52Z36boXn4_pOt8p6ejM9vKtFrEX1Knz8Sh46O4IVurcIdj4wJUS6avmRYYHjNOFl0O4dOlGiVmvsKq_vkvhFrcpXqiFgt9-OYk1mtz5YCuaTpl0wFmcmW11qUxfhOit9RqBSW2c3FkrjI9NWRivuc9HutcF2_wSFRapSViOlJz9262I7vQchKG9VURgdfXVfmQY1tE4R5iF4aT-ruY6cQf0-j6QAAAAGFpL8IAA", None)
+STRING5 = getenv("BQHHYkkAuz2l7z7APDam5Q02nLKDHxA6xH_ieN9ReqV3S2tu_Ak2tuviD1I88eec4w1eE2GFHOrdDS9wNfakWXJtuEEA1hqJsulZ9KsDPZRKuuV2wnvnJUKYYM_RKcN0iu52Z36boXn4_pOt8p6ejM9vKtFrEX1Knz8Sh46O4IVurcIdj4wJUS6avmRYYHjNOFl0O4dOlGiVmvsKq_vkvhFrcpXqiFgt9-OYk1mtz5YCuaTpl0wFmcmW11qUxfhOit9RqBSW2c3FkrjI9NWRivuc9HutcF2_wSFRapSViOlJz9262I7vQchKG9VURgdfXVfmQY1tE4R5iF4aT-ruY6cQf0-j6QAAAAGFpL8IAA", None)
 
 # Bot introduction messages - These can be customized as per your preference
 AYU = [
