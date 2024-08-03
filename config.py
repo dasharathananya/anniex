@@ -17,7 +17,7 @@ BOT_USERNAME = getenv("@Ananya_musicbot", "MISS_YUMIPRO_BOT")
 BOT_NAME = getenv("BOT_NAME", "‣ 𝘼𝙉𝙉𝘼𝙔𝘼 𝙈𝙐𝙎𝙄𝘾 𝘽𝙊𝙏 ")
 ASSUSERNAME = getenv("@ANANYA_MUSIC_ASSISTANT", "🎧 𝘼𝙉𝘼𝙉𝙔𝘼 ✘ 𝙈𝙐𝙎𝙄𝘾 ➛")
 EVALOP = list(map(int, getenv("EVALOP", "1841914911").split()))
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://dasharathgarai2:<dasharath>@cluster.tr6wkq7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster", None)
 LOGGER_ID = int(getenv("-1002245560052", -1002094142057))
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # External APIs - Get these from their respective providers
